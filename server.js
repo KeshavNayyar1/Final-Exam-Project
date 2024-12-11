@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const axios = require('axios');
-// const url_API = "http://www.boredapi.com/api/activity/" prior to 11/30/2024
+
 const url_API = "https://opentdb.com/api.php?amount=1&type=multiple";
 const path = require("path");
 
