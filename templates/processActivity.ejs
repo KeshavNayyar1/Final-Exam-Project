@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Activity Confirmation</title>
+  <link rel="stylesheet" type="text/css" href="/styles.css" />
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        User Information
+      </div>
+      <div class="card-body">
+        <h2 class="card-title"></h2>
+
+        <div class="card-text">
+
+          <strong>Name: </strong><%- name %><br />
+            <strong>Email: </strong><%- email %><br />
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="card">
+      <div class="card-header-v2">
+        New Question 
+      </div>
+      <div class="card-body">
+        <h2 class="card-title"></h2>
+
+        <div class="card-text">
+
+          <br /><%- fetched_activity %><br />
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        Previous Activities
+      </div>
+      <div class="card-body">
+        <h2 class="card-title"></h2>
+
+        <div class="card-text">
+
+          <br /><%- activities %><br />
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container"><a href="/main" class="home-link">USER HOME</a></div>
+
+</body>
+
+</html>

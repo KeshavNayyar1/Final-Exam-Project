@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Join Confirmation</title>
+  <link rel="stylesheet" type="text/css" href="/styles.css" />
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        Confirmation
+      </div>
+      <div class="card-body">
+        <h2 class="card-title"></h2>
+
+        <div class="card-text">
+
+          <strong>Name: </strong><%- name %><br />
+            <strong>Email: </strong><%- email %><br />
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        Questions
+      </div>
+      <div class="card-body">
+        <h2 class="card-title"></h2>
+
+        <div class="card-text">
+
+          <br /><%- activities %><br />
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container"><strong id="lastmodify"></strong></div>
+
+  <div class="container"><a href="/main" class="home-link">USER HOME</a></div>
+
+  <script>
+    const date = new Date(document.lastModified);
+    answer = "Task completed at " + date;
+    document.querySelector("#lastmodify").innerHTML = answer;
+  </script>
+</body>
+
+</html>

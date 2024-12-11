@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Get Activity</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                Generate Question
+            </div>
+            <div class="card-body">
+
+                <h2 class="card-title">Input Info</h2>
+                <form id="activityForm" action="./processActivity" method="post">
+
+                    
+                    <label>Email: <input type="email" name="email"></label>
+
+                    <br><br>
+                    <button type="reset">Reset</button>
+                    <button type="submit">Get Question</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container"><a href="/main" class="home-link">USER HOME</a></div>
+
+    <script>
+        document.querySelector("#activityForm").addEventListener("submit", function (event) {
+            let confirmed = confirm("The BoredomBuddy culture ensists you live up to the challenge and MUST do the activity given.\nDo you accept :)");
+
+            // If user cancels, prevent form submission
+            if (!confirmed) {
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>New User Join</title>
+	<link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="card">
+			<div class="card-header">
+				Welcome!
+			</div>
+			<div class="card-body">
+
+				<h2 class="card-title">Get apart of the Community!</h2><br>
+
+				<form id="joinForm" action="./processJoin" method="post">
+
+					<label>Name: <input type="text" name="name" /></label> <br><br>
+					<label>Email Address: <input type="email" name="email"></label>
+
+					<br><br>
+
+					<br>
+					<button type="reset">Reset</button>
+					<button type="submit">Join</button>
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="container"><a href="/main" class="home-link">USER HOME</a></div>
+
+	<script>
+		document.querySelector("#joinForm").addEventListener("submit", function (event) {
+			let confirmed = confirm("Are you sure you want to join?\nYou will not be able to change this specific information once submitted.");
+
+			// If user cancels, prevent form submission
+			if (!confirmed) {
+				event.preventDefault();
+			}
+		});
+	</script>
+</body>
+
+</html>

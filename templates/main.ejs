@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>User</title>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        Users
+      </div>
+      <div class="card-body">
+        <h2 class="card-title">New User</h2>
+        <p class="card-text">To get your trivia question, join the community!</p>
+        <button onclick="join()">Join</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+
+      </div>
+      <div class="card-body">
+        <h2 class="card-title">Returning User</h2>
+        <p class="card-text">Generate your Question!</p>
+        <button onclick="activityForm()">Get Question</button>
+      </div>
+    </div>
+  </div>
+
+
+  <br />
+  <div class="container"><a href="/" class="home-link">HOME</a></div>
+
+  <script>
+    function join() {
+      window.location.href = "/join";
+    }
+    function activityForm() {
+      window.location.href = "/activityForm";
+    }
+  </script>
+</body>
+
+</html>
